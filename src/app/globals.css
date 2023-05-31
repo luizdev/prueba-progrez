@@ -25,3 +25,44 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+main{
+  background: #fff url('/bg-content.jpg') repeat-x center top;
+}
+
+.menulist{
+
+}
+
+.menulist li{
+  position: relative;
+}
+.menulist li > a{
+  border-bottom: 2px solid transparent;
+}
+
+.menulist li:hover > a{
+  border-bottom: 2px solid #0247a2;
+}
+
+.menulist li > ul{
+  display: none;
+  background: #fff;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  border: 1px solid #9c9c9c;
+}
+
+.menulist li > ul li{
+  border-bottom: 1px solid #9c9c9c;
+}
+
+.menulist li > ul li a, .menulist li > ul li:hover a{
+  border-bottom: none;
+}
+
+.menulist li:hover > ul{
+  display: block;
+  
+}
